@@ -1,0 +1,94 @@
+
+
+.skills-section {
+    // background-color: darkgray;
+    // height: 70vh;
+    padding: 0 100px 50px 100px;
+
+    .skill-title {
+        font-weight: 700;
+        // color: lightcoral;
+        font-family: $fontFamily;
+            font-size: 2em;
+            letter-spacing: 5px;
+    }
+
+    .skills {
+        // background-color: coral;
+        // height: 90%;
+        padding: 50px;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+
+        .progress {
+            // background-color: lightblue;
+            // width: 500px;
+            // display: flex;
+            // flex-direction: column;
+            padding: 0 10px;
+
+            
+
+            .progress-title {
+                // background-color: red;
+                // float: left;
+                font-size: 18px;
+                // margin: 0 0 5px 20px;
+                margin-bottom: 5px;
+
+            }
+
+            .value {
+                float: right;
+            }
+
+            .progressBar {
+                background-color: darkgray;
+                position: relative;
+                width: 100%;
+                height: 10px;
+                // clear:both;
+                
+                // float: right;
+
+                .animatedBar {
+                    position: absolute;
+                    background-color: lightcoral;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .skills-section {
+        // background-color: darkgray;
+        // height: 70vh;
+        padding: 50px 100px;
+    
+        .skill-title {
+            font-weight: 700;
+            // color: lightcoral;
+            font-family: 'Poppins', sans-serif;
+                font-size: 2em;
+                letter-spacing: 5px;
+        }
+    
+        .skills {
+            // background-color: coral;
+            // height: 90%;
+            padding: 50px;
+            // display: grid;
+            // grid-gap: 30px;
+            // grid-template-columns: repeat(2, minmax(250px, 1fr));
+            display: flex;
+            flex-direction: column;
+
+            .progress {
+                margin-bottom: 20px; 
+            }
+        }
+    }
+}

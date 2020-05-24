@@ -1,0 +1,188 @@
+
+
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 50px 0;
+    min-height: 80vh;
+    // background-color: blue;
+
+    .experience {
+        padding: 0 50px 50px;
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;////
+        // background-color: burlywood;
+
+        h2 {
+            font-family: $fontFamily;
+            font-size: 2em;
+            letter-spacing: 5px;
+            margin-bottom: 20px;///////
+        }
+
+        .expe-content {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            grid-column-gap: 30px;
+            // padding-top: 50px;///////
+            // background-color: cornflowerblue;
+
+            .expe-1 {
+                // min-height: 200px;
+
+                .expe-details {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    
+                    .briefcase {
+                        width: 50px;
+                        height: 50px;                        
+
+                        i {
+                            width: 50px;
+                            height: 50px;
+                            text-align: center;
+                            background-color: $mainColor;
+                            color: white;
+                            font-size: 30px;border-radius: 50%;
+                            line-height: 50px;
+
+                        }
+                    }
+
+                    .expe-title {
+                        margin-left: 30px;
+
+                        h3 {
+                            font-family: $fontFamily;
+                        }
+
+                        p {
+                            color: darkgray; //****
+                        }
+                    }
+                }
+
+                hr {
+                    border: none;
+                    width: 150px;
+                    height: 5px;
+                    background-color: $mainColor;
+                    margin: 10px 0 30px 0;
+                }
+            }
+
+            .expe-2 {
+                @extend .expe-1;
+            }
+
+        }
+    }
+
+    .education {
+        padding: 0 50px 50px;
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+        // background-color: coral;
+
+        h2 {
+            font-family: $fontFamily;
+            font-size: 2em;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+        }
+
+        .educ-content {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            grid-column-gap: 30px;
+            // padding-top: 50px;
+            // background-color: crimson;
+
+            .educ-1 {
+                // min-height: 200px;///
+
+                .educ-details {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .cap {
+                        width: 50px;
+                        height: 50px;
+                        
+                        i {
+                            width: 50px;
+                            height: 50px;
+                            text-align: center;
+                            background-color: $mainColor;
+                            color: white;
+                            font-size: 30px;border-radius: 50%;
+                            line-height: 50px;
+
+                        }
+                    }
+
+                    .educ-title {
+                        margin-left: 30px;
+
+                        h3 {
+                            font-family: $fontFamily; //*****
+                        }
+
+                        p {
+                            color: darkgray; //****
+                        }
+                    }
+                }
+
+                hr {
+                    border: none;
+                    width: 150px;
+                    height: 5px;
+                    background-color: $mainColor;
+                    margin: 10px 0 30px 0;
+                }
+            }
+
+            .educ-2 {
+                @extend .educ-1;
+            }
+        }
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+    .resume-section {
+    
+        .experience {
+    
+            .expe-content {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(2, minmax(150px, 1fr));
+                grid-row-gap: 30px;
+                // padding: 50px 0px;
+                // background-color: crimson;
+            }
+        }
+    
+        .education {
+    
+            .educ-content {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(2, minmax(150px, 1fr));
+                grid-row-gap: 30px;
+                // padding: 50px 0px;
+            }
+        }
+    }
+}

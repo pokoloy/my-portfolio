@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+$fontFamily: 'Poppins', sans-serif;
+$mainColor: lightcoral;
+$secondaryColor: rgb(105,97,97);
+
+
+@import 'footer';
+@import 'header';
+@import 'about';
+@import 'contact';
+@import 'nav';
+@import 'resume';
+@import 'portfolio';
+@import 'skills';
+@import 'home';
+
+$fontFamily: 'Poppins', sans-serif;
+$mainColor: lightcoral;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

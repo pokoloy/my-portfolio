@@ -1,0 +1,173 @@
+
+
+.portfolio-section {
+    width: 100%;
+
+    .portfolio-menu {
+        // background-color: crimson;
+        font-family: $fontFamily;
+        font-size: 18px;
+
+        ul {
+            // background-color: burlywood;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+
+            li {
+                // background-color: blue;
+                margin: 20px 25px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: $mainColor;
+                        font-weight: bolder;
+                    }
+
+                    &.active {
+                        color: $mainColor;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .portfolio-content {
+        // display: grid;
+        //     // grid-template-columns: repeat(auto-fill, minmax(200,1fr));
+        //     // grid-gap: 20px;
+        //     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        // grid-template-rows: 1fr;
+        // grid-gap: 20px;
+        // display: flex;
+        // flex-direction: row;
+        // width: 100%;
+        // columns: 3;
+        // column-gap: 30px;
+        width: 90%;
+        // background-color: blue;
+        padding: 0 4.5%;
+        margin: 50px auto;
+        // float: left;
+
+        .gutter-sizer {
+            width: 5%;
+            // background-color: brown;
+        }
+
+        .card {
+            // max-width: 300px;
+            // max-width: 350px;
+            width: 27%;
+            // display: inline-block;
+            // width: 250px;
+            min-height: 350px;
+            float: left;
+            // width: 25%;
+            background-color: lightcoral;
+            margin: 20px auto;
+            padding: 20px;
+            // margin: 0px 20px 20px; 
+            // overflow: hidden;
+            
+
+            
+            .imgBox {
+                width: 100%;
+                height: 200px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .description {
+                padding: 20px 10px;
+                background-color: white;
+
+                h3 {
+                    margin-bottom: 10px;
+                    font-family: $fontFamily;
+                    // font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+          
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    .portfolio-section {
+        
+
+        .portfolio-content {
+        
+            width: 90%;
+            // background-color: khaki;
+            padding: 0 5.5%;
+            margin: 50px auto;
+
+            .gutter-sizer {
+                width: 5%;
+            }
+
+            .card {
+                width: 41.5%;
+                // min-height: 400px;
+                // float: left;
+                // background-color: blue;
+                // margin: 20px auto;
+                // padding: 20px;
+
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 700px) {
+
+    .portfolio-section {
+        
+
+        .portfolio-content {
+        
+            width: 90%;
+            // background-color: pink;
+            padding: 0 5%;
+            margin: 50px auto;
+
+            .gutter-sizer {
+                width: 0%;
+            }
+
+            .card {
+                width: 90%;
+                // min-height: 0px;
+                // float: left;
+                // background-color: blue;
+                // margin: 20px auto;
+                // padding: 20px;
+
+
+            }
+        }
+
+    }
+}

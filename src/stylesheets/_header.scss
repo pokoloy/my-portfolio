@@ -1,0 +1,26 @@
+
+
+.header-section {
+    height: 150px;
+    // background-color: lightgreen;
+    padding: 20px 50px;
+
+
+    .header-title {
+        font-family: $fontFamily;
+        font-size: 3em;
+        font-weight: bolder;
+        letter-spacing: 3px;
+    }
+
+    hr {
+        background-color: $mainColor;
+        border: none;
+        height: 10px;
+        width: 300px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+}
